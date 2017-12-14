@@ -8,7 +8,7 @@ header {
   display: grid;
   align-content: center;
 }
-h1 {
+header h1 {
   font-size: 150px;
 }
 button {
@@ -25,43 +25,43 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  overflow: hidden;
   position: relative;
   transition: all ease 0.1s;
 }
 button:hover {
   opacity: 0.75;
-  top: 2px;
 }
 button:active {
   top: 6px;
   box-shadow: 0 0 #ffffff;
   outline: none;
   border: none;
+  overflow: hidden;
 }
-.container
-{
-    min-height: 100vh;
-    background-color: lightgray;
+.container {
+  min-height: 100vh;
+  background-color: lightgray;
 }
-section {
+section.content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3.1fr);
   grid-gap: 10px;
   padding: 20px;
 }
-section div:nth-child(1) {
+section.content div:nth-child(1) {
   grid-column: 1/3;
 }
 
-section div:nth-child(5) {
+section.content div:nth-child(5) {
   grid-column: 2/4;
 }
-section div:nth-child(6) {
+section.content div:nth-child(6) {
   grid-column: 4;
   grid-row: 2/4;
 }
-section div {
+section.content div {
   border: 3px solid black;
   min-height: 30vh;
   background-color: white;
@@ -72,33 +72,102 @@ section div {
   transition: color 1s, background-color 1s, border-color 1s, transform 10s;
   cursor: pointer;
 }
-section div:hover {
+section.content div:hover {
   background-color: black;
   color: white;
   border-color: lightgrey;
 }
-
+#contacts {
+  min-height: 45vh;
+  background-color: grey;
+  justify-content: center;
+  display: grid;
+}
+form {
+  text-align: center;
+}
+form span {
+  font-size: 30px;
+}
+input[name="name"] {
+  font-size: 150%;
+  margin-top: 10px;
+  padding-left: 5px;
+  min-height: 40px;
+  min-width: 150px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  float: left;
+}
+input[name="email"] {
+  float: left;
+  font-size: 150%;
+  padding-left: 5px;
+  min-height: 40px;
+  min-width: 200px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  margin: 5px 0;
+}
+textarea {
+  float: left;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  padding-top: 4px;
+  padding-left: 10px;
+  font-size: 16px;
+  resize: none;
+  min-height: 100px;
+  min-width: 300px;
+}
+input[type="submit"] {
+  min-width: 30px;
+  min-height: 20px;
+  font-size: 15px;
+  background-color: lightgrey;
+  box-shadow: 0 3px darkgrey;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.1s;
+  float: right;
+  margin-top: 5px;
+}
+input {
+  font-size: 100%;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+}
 
 @media (max-width: 1084px) {
   h1 {
     padding: 0 20px;
     font-size: 100px;
   }
-  section {
+  section.content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  section div:nth-child(1) {
+  section.content div:nth-child(1) {
     grid-column: 1/3;
   }
-  section div:nth-child(5) {
+  section.content div:nth-child(5) {
     grid-column: initial;
   }
-  section div:nth-child(6) {
+  section.content div:nth-child(6) {
     grid-row: initial;
     grid-column: 1/3;
   }
-  section div:nth-child(9) {
+  section.content div:nth-child(9) {
     grid-row: initial;
     grid-column: 1/3;
   }
@@ -110,7 +179,7 @@ section div:hover {
   }
 }
 @media (max-width: 1028px) {
-  section div {
+  section.content div {
     padding: 10px 10px;
   }
 }
@@ -119,24 +188,24 @@ section div:hover {
     padding: 0 20px;
     font-size: 50px;
   }
-  section {
+  section.content {
     display: grid;
     grid-template-columns: 1fr;
   }
-  section div{
-      min-height: 300px;
+  section.content div {
+    min-height: 300px;
   }
-  section div:nth-child(1) {
+  section.content div:nth-child(1) {
     grid-column: initial;
   }
-  section div:nth-child(5) {
+  section.content div:nth-child(5) {
     grid-column: initial;
   }
-  section div:nth-child(6) {
+  section.content div:nth-child(6) {
     grid-row: initial;
     grid-column: initial;
   }
-  section div:nth-child(9) {
+  section.content div:nth-child(9) {
     grid-row: initial;
     grid-column: initial;
   }
