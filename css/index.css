@@ -161,30 +161,18 @@ input {
 #contacts #ajaxform span:nth-child(1) {
   font-size: 25px;
 }
-#contacts form span:nth-child(2n + 1) {
+#contacts form span.spanName {
   padding: 2px 0;
   float: left;
   font-size: 15px;
 }
-#contacts #ajaxform input.banned {
+#contacts #ajaxform .banned {
   background: #f87979;
   border-color: #ff5656;
   color: red;
   opacity: 0.9;
 }
- input::after {
-  content: "INPUT field ";
-  color:red;
-  background-color: #fc0;
-  font-size: 90%;
-  padding: 2px;
-}
-#contacts #ajaxform textarea.banned {
-  border-color: #ff5656;
-  color: red;
-  background: #f87979;
-  opacity: 0.9;
-}
+
 @media (max-width: 1084px) {
   h1 {
     padding: 0 20px;
