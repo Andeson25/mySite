@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
 body {
   margin: 0;
 }
@@ -77,12 +79,14 @@ section.content div:hover {
   color: white;
   border-color: lightgrey;
 }
-#contacts {
-  min-height: 45vh;
+ #contacts {
+  min-height: 60vh;
   background-color: grey;
   justify-content: center;
   display: grid;
 }
+
+
 form {
   text-align: center;
 }
@@ -157,6 +161,14 @@ input {
   outline: none;
   overflow: hidden;
   border-radius: 5px;
+}
+#contacts #ajaxform span:nth-child(1){
+  font-size: 25px;
+}
+#contacts form  span:nth-child(2n+1){
+  margin: 2px 0;
+    float: left;
+    font-size: 15px;
 }
 
 @media (max-width: 1084px) {
