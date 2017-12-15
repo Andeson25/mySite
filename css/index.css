@@ -145,7 +145,7 @@ input[type="submit"]:hover {
   opacity: 0.75;
 }
 input[type="submit"]:active {
-  top: 6px;
+  top: 3px;
   box-shadow: 0 0 #ffffff;
   outline: none;
   border: none;
