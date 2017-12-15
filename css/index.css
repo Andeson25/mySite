@@ -166,17 +166,24 @@ input {
   float: left;
   font-size: 15px;
 }
-#contacts #ajaxform input.banned{
-  background: #F87979;
-  border-color: #FF5656;
+#contacts #ajaxform input.banned {
+  background: #f87979;
+  border-color: #ff5656;
   color: red;
-  opacity: .9;
+  opacity: 0.9;
 }
-#contacts #ajaxform textarea.banned{
-  border-color: #FF5656;
+ input::after {
+  content: "INPUT field ";
+  color:red;
+  background-color: #fc0;
+  font-size: 90%;
+  padding: 2px;
+}
+#contacts #ajaxform textarea.banned {
+  border-color: #ff5656;
   color: red;
-  background: #F87979;
-  opacity: .9;
+  background: #f87979;
+  opacity: 0.9;
 }
 @media (max-width: 1084px) {
   h1 {
