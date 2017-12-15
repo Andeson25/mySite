@@ -2,14 +2,22 @@ $(document).ready(function() {
   $("#ajaxform").submit(function(e) {
     e.preventDefault();
     var form = $(this);
-    var errors = false;
+    var errorsCount = 0;
     form.find("input, textarea").each(function() {
       if ($(this).val() === "") {
-        alert('Please fill the field "' + $(this).attr("placeholder") + '"!');
-        errors = true;
+        $(this).addClass("banned");
+        errorsCount++;
+        // alert('Please fill the field "' + $(this).attr("placeholder") + '"!');
+        // errors = true;
       }
     });
-    if (!errors) {
+    form.find("input, textarea").on('change',function() {
+      if ($(this).val() != "") {
+        $(this).removeClass("banned");
+        errorsCount--;
+      }
+    });
+    if (errorsCount === 0) {
       var data = form.serialize();
       $.ajax({
         type: "POST",

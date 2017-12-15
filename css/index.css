@@ -79,16 +79,12 @@ section.content div:hover {
   color: white;
   border-color: lightgrey;
 }
- #contacts {
-  min-height: 60vh;
+#contacts {
+  padding: 5px 0;
+  min-height: 50vh;
   background-color: grey;
   justify-content: center;
   display: grid;
-}
-
-
-form {
-  text-align: center;
 }
 form span {
   font-size: 30px;
@@ -162,15 +158,26 @@ input {
   overflow: hidden;
   border-radius: 5px;
 }
-#contacts #ajaxform span:nth-child(1){
+#contacts #ajaxform span:nth-child(1) {
   font-size: 25px;
 }
-#contacts form  span:nth-child(2n+1){
-  margin: 2px 0;
-    float: left;
-    font-size: 15px;
+#contacts form span:nth-child(2n + 1) {
+  padding: 2px 0;
+  float: left;
+  font-size: 15px;
 }
-
+#contacts #ajaxform input.banned{
+  background: #F87979;
+  border-color: #FF5656;
+  color: red;
+  opacity: .9;
+}
+#contacts #ajaxform textarea.banned{
+  border-color: #FF5656;
+  color: red;
+  background: #F87979;
+  opacity: .9;
+}
 @media (max-width: 1084px) {
   h1 {
     padding: 0 20px;
