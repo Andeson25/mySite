@@ -1,26 +1,23 @@
 $(document).ready(function() {
-  $("#ajaxform").submit(e => {
+  $("#ajaxform").submit(function(e) {
+    e.preventDefault();
     var form = $(this);
-    var error = false;
-    form.find("input, textarea").each(() => {
-      if ($(this).val() == "") {
+    var errors = false;
+    form.find("input, textarea").each(function() {
+      if ($(this).val() === "") {
         alert('Please fill the field "' + $(this).attr("placeholder") + '"!');
-        error = true;
+        errors = true;
       }
     });
-    if (!error) {
+    if (!errors) {
       var data = form.serialize();
       $.ajax({
         type: "POST",
-        url: "https://formspree.io/oleh.petryk@gmail.com",
+        url: "https://formspree.io/danil.monets@gmail.com",
         dataType: "json",
         data: data,
-        success: function(data) {
-          if (data["error"]) {
-            alert(data["error"]);
-          } else {
-            alert("Form was delivered!");
-          }
+        success: function() {
+          alert("Form was delivered!");
         },
         error: function(xhr, ajaxOptions, thrownError) {
           alert(xhr.status);
