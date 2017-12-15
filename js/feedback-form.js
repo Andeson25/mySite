@@ -13,7 +13,7 @@ $(document).ready(function() {
       var data = form.serialize();
       $.ajax({
         type: "POST",
-        url: "https://formspree.io/danil.monets@gmail.com",
+        url: "https://formspree.io/oleh.petryk@gmail.com",
         dataType: "json",
         data: data,
         success: function() {
