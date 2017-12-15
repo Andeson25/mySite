@@ -1,9 +1,8 @@
 $(document).ready(function() {
-  $("#ajaxform").submit(e=> {
-      
+  $("#ajaxform").submit(e => {
     var form = $(this);
     var error = false;
-    form.find("input, textarea").each(function() {
+    form.find("input, textarea").each(() => {
       if ($(this).val() == "") {
         alert('Please fill the field "' + $(this).attr("placeholder") + '"!');
         error = true;
