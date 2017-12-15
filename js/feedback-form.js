@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $("#ajaxform").submit(function() {
+  $("#ajaxform").submit(e=> {
+      
     var form = $(this);
     var error = false;
     form.find("input, textarea").each(function() {
