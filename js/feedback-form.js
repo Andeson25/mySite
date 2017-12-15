@@ -7,11 +7,9 @@ $(document).ready(function() {
       if ($(this).val() === "") {
         $(this).addClass("banned");
         errorsCount++;
-        // alert('Please fill the field "' + $(this).attr("placeholder") + '"!');
-        // errors = true;
       }
     });
-    form.find("input, textarea").on('change',function() {
+    form.find("input, textarea").on("change", function() {
       if ($(this).val() != "") {
         $(this).removeClass("banned");
         errorsCount--;
