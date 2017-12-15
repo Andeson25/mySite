@@ -19,9 +19,7 @@ $(document).ready(function() {
           alert("Form was delivered successfully!");
         },
         error: function(xhr, ajaxOptions, thrownError) {
-          alert(xhr.status);
-          alert(thrownError);
-          alert("EROR!");
+          
         }
       });
     }
