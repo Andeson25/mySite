@@ -15,11 +15,16 @@ $(document).ready(function() {
         url: "https://formspree.io/oleh.petryk@gmail.com",
         dataType: "json",
         data: data,
-        success: () => {
-          alert("Form was delivered successfully!");
+        success: function(data) {
+          if (data["error"]) {
+            alert(data["error"]);
+          } else {
+            alert("Form was delivered!");
+          }
         },
         error: function(xhr, ajaxOptions, thrownError) {
-          
+          alert(xhr.status);
+          alert(thrownError);
         }
       });
     }
