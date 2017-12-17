@@ -295,7 +295,10 @@ form > input[type="submit"] {
     align-self: flex-start;
     font-weight: bold;
 }
-
+.inpt{
+    display: flex;
+    flex-direction: row;
+}
 input:invalid + span:after {
     position: absolute;
     content: '✖';
@@ -335,13 +338,13 @@ input[type="submit"]:hover {
     filter: brightness(95%);
 }
 
-input, input[type="textarea"] {
+span.inpt input, input[type="textarea"] {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     outline: none;
     display: block;
-    width: 100%;
+    width: 50vh;
     padding: 7px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -359,7 +362,16 @@ input[type="submit"]:active {
     border: none;
     overflow: hidden;
 }
-
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fbfff0;
+}
 @media (max-width: 1084px) {
     h1 {
         padding: 0 20px;
