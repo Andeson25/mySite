@@ -1,0 +1,468 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+html{
+
+}
+body {
+    margin: 0;
+    font-family: Merriweather;
+}
+
+nav {
+    overflow: hidden;
+    height: 60px;
+    background-color: #2e2e2e;;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    list-style-type: none;
+    color: #f8f8f8;
+    padding: 20px 0;
+    margin: 0;
+
+}
+
+nav a:hover {
+    background: #00939C;
+}
+
+.navbar-fixed {
+    top: 0;
+    position: fixed;
+}
+
+header {
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #293A43;
+    opacity: .5;
+}
+
+.buttons {
+    text-align: center;
+    z-index: 0;
+}
+
+header .buttons h1 {
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.buttons a {
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 40px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f0650d;
+    box-shadow: 0 3px #974c0d;
+    box-sizing: content-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: all ease 0.1s;
+
+}
+
+a:hover {
+    filter: brightness(85%);
+}
+
+a:active {
+    top: 3px;
+    box-shadow: 0 0 #974c0d;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+section.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 25px;
+    background-color: #ffffff;
+}
+
+.introduction {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px;
+    background-color: #fdfdfd;
+    box-shadow: 1px 1px 2px 3px #ccc;
+
+}
+
+.introduction-text {
+    grid-column: 1/2;
+}
+
+.introduction-img {
+    height: 40vh;
+    grid-column: 2/3;
+    border-radius: 5px;
+    background-image: url('../img/me.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.why-me {
+    grid-column: 2/4;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.why-me h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.schedule-img {
+    height: 30vh;
+    background-image: url('../img/schedule.jpg');
+    background-size: cover;
+    background-position: 0 25%;
+    background-repeat: no-repeat;
+}
+
+.tip {
+    margin: 0 10px;
+    grid-column: 3/6;
+    grid-row: 3/4;
+}
+
+.tip-img {
+    height: 30vh;
+    background-image: url('../img/contact.jpg');
+    background-size: cover;
+    background-position: 0 0%;
+    background-repeat: no-repeat;
+}
+
+.online-img {
+    height: 30vh;
+    background-image: url('../img/skype.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.online {
+    margin: 0 10px;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.on-home-img {
+    height: 30vh;
+    background-image: url('../img/home-lesson.png');
+    background-size: cover;
+    background-position: 0 45%;
+    background-repeat: no-repeat;
+}
+
+.on-home {
+    margin: 0 10px;
+    grid-column: 3/6;
+    grid-row: 4/5;
+}
+
+.reviews > hr {
+    margin: 0 20px;
+}
+
+.cards {
+    grid-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 20px;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 250px;
+    box-shadow: 1px 1px 2px 3px #ccc;
+}
+
+.card > h3 {
+    padding: 0 15px;
+}
+
+
+
+.card-first-img {
+
+    background-image: url('../img/review1.jpg');
+    grid-row: 1/2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-second-img {
+
+    background-image: url('../img/review2.jpg');
+    grid-row: 1/2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-third-img {
+    background-image: url('../img/review3.jpg');
+    grid-row: 1/2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contacts {
+    border-radius: 10px;
+    margin: 0 140px 20px;
+    padding: 5px 0;
+    background-color: #f8f8f8;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-auto-rows: 500px;
+    box-shadow: 1px 3px 2px #ccc;
+}
+.img-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.img-form img{
+    height: 100%;
+    width:100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+form >input[type="submit"]{
+    width: 120px;
+}
+.form-header{
+    align-self: flex-start;
+    font-weight: bold;
+}
+input:invalid+span:after {
+    position: absolute; content: '✖';
+    padding-left: 5px;
+    color: #8b0000;
+}
+.validity{
+    margin: 2px;
+}
+input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+    color: #009000;
+}
+input[type="submit"] {
+    color: #fbfff0;
+    border-radius: 5px;
+    font-size: 40px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f0650d;
+    box-shadow: 0 3px #974c0d;
+    box-sizing: content-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: all ease 0.1s;
+}
+.phone{
+}
+input[type="submit"]:hover {
+    filter: brightness(95%);
+}
+input,input[type="textarea"]
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+    border-radius: 5px;
+}
+input[type="submit"]:active {
+    top: 3px;
+    box-shadow: 0 0 #974c0d;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+
+@media (max-width: 1084px) {
+    h1 {
+        padding: 0 20px;
+        font-size: 100px;
+    }
+
+    .buttons a {
+
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1028px) {
+
+}
+
+@media (max-width: 924px) {
+    header .buttons h1 {
+        padding: 0 20px;
+        font-size: 60px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .introduction {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .introduction-img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .introduction-text {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .schedule {
+        grid-row: 3/4;
+        grid-column: 1/5;
+    }
+
+    .tip {
+        grid-row: 4/5;
+        grid-column: 1/5;
+    }
+
+    .online {
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+
+    .on-home {
+        grid-column: 1/5;
+        grid-row: 6/7;
+    }
+
+    .why-me h1, .why-me h3 {
+        font-size: 55px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .buttons a {
+
+        font-size: 25px;
+
+    }
+    .card{
+        margin: 0 20px;
+    }
+    .card-first{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .card-second{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .card-third{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .img-form {
+    visibility: hidden;
+    }
+    #contacts{
+        grid-template-columns: 1fr 0;
+        margin: 20px 50px 20px;
+        height: auto;
+    }
+    form{
+
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+@media (max-width: 666px) {
+    .why-me h1, .why-me h3 {
+        font-size: 30px;
+    }
+}
