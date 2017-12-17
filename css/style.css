@@ -230,8 +230,6 @@ section.content {
     padding: 0 15px;
 }
 
-
-
 .card-first-img {
 
     background-image: url('../img/review1.jpg');
@@ -269,43 +267,53 @@ section.content {
     grid-auto-rows: 500px;
     box-shadow: 1px 3px 2px #ccc;
 }
-.img-form{
+
+.img-form {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 80px;
 }
-.img-form img{
+
+.img-form img {
     height: 100%;
-    width:100%;
+    width: 100%;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
-form >input[type="submit"]{
+
+form > input[type="submit"] {
     width: 120px;
 }
-.form-header{
+
+.form-header {
     align-self: flex-start;
     font-weight: bold;
 }
-input:invalid+span:after {
-    position: absolute; content: '✖';
+
+input:invalid + span:after {
+    position: absolute;
+    content: '✖';
     padding-left: 5px;
     color: #8b0000;
 }
-.validity{
+
+.validity {
     margin: 2px;
 }
-input:valid+span:after {
+
+input:valid + span:after {
     position: absolute;
     content: '✓';
     padding-left: 5px;
     color: #009000;
 }
+
 input[type="submit"] {
     color: #fbfff0;
     border-radius: 5px;
@@ -326,8 +334,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
     filter: brightness(95%);
 }
-input,input[type="textarea"]
-{
+
+input, input[type="textarea"] {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -343,6 +351,7 @@ input,input[type="textarea"]
     height: 45px;
     border-radius: 5px;
 }
+
 input[type="submit"]:active {
     top: 3px;
     box-shadow: 0 0 #974c0d;
@@ -350,7 +359,6 @@ input[type="submit"]:active {
     border: none;
     overflow: hidden;
 }
-
 
 @media (max-width: 1084px) {
     h1 {
@@ -428,30 +436,37 @@ input[type="submit"]:active {
         font-size: 25px;
 
     }
-    .card{
+
+    .card {
         margin: 0 20px;
     }
-    .card-first{
+
+    .card-first {
         grid-column: 1/4;
         grid-row: 1/2;
     }
-    .card-second{
+
+    .card-second {
         grid-column: 1/4;
         grid-row: 2/3;
     }
-    .card-third{
+
+    .card-third {
         grid-column: 1/4;
         grid-row: 3/4;
     }
+
     .img-form {
-    visibility: hidden;
+        visibility: hidden;
     }
-    #contacts{
+
+    #contacts {
         grid-template-columns: 1fr 0;
         margin: 20px 50px 20px;
         height: auto;
     }
-    form{
+
+    form {
 
         grid-column: 1;
         grid-row: 1;
