@@ -4,7 +4,9 @@ body {
     margin: 0;
     font-family: Merriweather;
 }
-
+.navbarsize{
+    height: 60px;
+}
 nav {
     overflow: hidden;
     height: 60px;
@@ -108,9 +110,7 @@ a:active {
     background-color: #ffffff;
     display: grid;
 }
-.contac-container{
-    width: 100%;
-}
+
 section.content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -265,6 +265,7 @@ section.content {
 }
 
 #contacts {
+    width: auto;
     border-radius: 10px;
     margin: 0 140px 20px;
     padding: 5px 0;
@@ -482,12 +483,11 @@ footer{
 
     #contacts {
         grid-template-columns: 1fr 0;
-        margin: 20px 50px 20px;
         height: auto;
+        margin: 0 10px 30px;
     }
 
     form {
-
         grid-column: 1;
         grid-row: 1;
     }
