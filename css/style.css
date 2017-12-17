@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
-html{
 
-}
 body {
     margin: 0;
     font-family: Merriweather;
@@ -324,8 +322,7 @@ input[type="submit"] {
     position: relative;
     transition: all ease 0.1s;
 }
-.phone{
-}
+
 input[type="submit"]:hover {
     filter: brightness(95%);
 }
