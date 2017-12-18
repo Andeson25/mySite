@@ -4,14 +4,17 @@ body {
     margin: 0;
     font-family: Merriweather;
 }
-.navbarsize{
+
+.navbarsize {
     height: 60px;
 }
+
 nav {
+
     overflow: hidden;
     height: 60px;
     background-color: #2e2e2e;;
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -27,17 +30,20 @@ nav a {
     list-style-type: none;
     color: #f8f8f8;
 }
-.nav-icon{
+
+.nav-icon {
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-icon img{
+
+.nav-icon img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
+
 nav span.nav-icon:hover {
     background: #00939C;
 }
@@ -313,10 +319,12 @@ form > input[type="submit"] {
     align-self: flex-start;
     font-weight: bold;
 }
-.inpt{
+
+.inpt {
     display: flex;
     flex-direction: row;
 }
+
 input:invalid + span:after {
     position: absolute;
     content: '✖';
@@ -380,7 +388,8 @@ input[type="submit"]:active {
     border: none;
     overflow: hidden;
 }
-footer{
+
+footer {
     width: 100vw;
     height: 20vh;
     background-color: #2e2e2e;
@@ -390,6 +399,7 @@ footer{
     align-items: center;
     color: #fbfff0;
 }
+
 @media (max-width: 1084px) {
     h1 {
         padding: 0 20px;
@@ -502,13 +512,16 @@ footer{
         grid-column: 1;
         grid-row: 1;
     }
-    .card-first-img{
+
+    .card-first-img {
         background-position: center top;
     }
-    .card-second-img{
+
+    .card-second-img {
         background-position: center top;
     }
-    .card-third-img{
+
+    .card-third-img {
         background-position: center top;
     }
 }
@@ -518,7 +531,28 @@ footer{
         font-size: 30px;
     }
 
-    span.inpt input, input[type="textarea"]{
+
+
+
+   .img-form{
+       padding: 0;
+       margin:0;
+   }
+
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    span.inpt input, input[type="textarea"] {
         font-size: 12px;
     }
 }
