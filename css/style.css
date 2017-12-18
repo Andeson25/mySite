@@ -11,7 +11,7 @@ nav {
     overflow: hidden;
     height: 60px;
     background-color: #2e2e2e;;
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -25,7 +25,7 @@ a {
 nav a {
     list-style-type: none;
     color: #f8f8f8;
-    padding: 20px 0;
+    padding: 20vw 0;
     margin: 0;
 
 }
@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display: grid;
     align-content: center;
@@ -51,7 +51,7 @@ header {
 }
 
 header::before {
-    width: 100%;
+    width: 100vw;
     content: '';
     position: absolute;
     top: 0;
@@ -65,7 +65,7 @@ header::before {
 .buttons {
     text-align: center;
     z-index: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 header .buttons h1 {
@@ -105,7 +105,7 @@ a:active {
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-color: #ffffff;
     display: grid;
@@ -265,9 +265,9 @@ section.content {
 }
 
 #contacts {
-    width: auto;
+    width: 80vw;
     border-radius: 10px;
-    margin: 0 140px 20px;
+    margin: 0 10% 20px;
     padding: 5px 0;
     background-color: #f8f8f8;
     justify-content: center;
@@ -281,12 +281,12 @@ section.content {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    padding: 35px;
 }
 
 .img-form img {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 form {
@@ -353,7 +353,7 @@ span.inpt input, input[type="textarea"] {
     -moz-box-sizing: border-box;
     outline: none;
     display: block;
-    width: 50vh;
+    width: 35vw;
     padding: 7px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -372,7 +372,7 @@ input[type="submit"]:active {
     overflow: hidden;
 }
 footer{
-    width: 100%;
+    width: 100vw;
     height: 20vh;
     background-color: #2e2e2e;
     display: flex;
