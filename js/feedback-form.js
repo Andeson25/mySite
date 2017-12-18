@@ -1,20 +1,4 @@
 
-
-$("#ajaxform").find("input,textarea").each(function () {
-    debugger;
-    if($(".validity").find("hidden")>0){
-        return;
-    }
-    else{
-    if ($(this).val() ==="") {
-        $(".validity").attr("hidden",true);
-    }
-    if ($(this).val() !="") {
-        $(".validity").attr("hidden",false);
-    }
-    }
-})
-
 $("#ajaxform").submit(function (e) {
     e.preventDefault();
     var form = $(this);
