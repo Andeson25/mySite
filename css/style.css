@@ -266,8 +266,8 @@ section.content {
 
 #contacts {
     width: 80vw;
+    margin: 30px auto;
     border-radius: 10px;
-    margin: 0 10% 20px;
     padding: 5px 0;
     background-color: #f8f8f8;
     justify-content: center;
@@ -353,7 +353,7 @@ span.inpt input, input[type="textarea"] {
     -moz-box-sizing: border-box;
     outline: none;
     display: block;
-    width: 35vw;
+    width: 40vw;
     padding: 7px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -484,7 +484,9 @@ footer{
     #contacts {
         grid-template-columns: 1fr 0;
         height: auto;
-        margin: 0 10px 30px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     form {
