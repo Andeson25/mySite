@@ -370,7 +370,7 @@ span.inpt input, input[type="textarea"] {
     -moz-box-sizing: border-box;
     outline: none;
     display: block;
-    width: 50vw;
+    width: 35vw;
     padding: 7px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -421,7 +421,9 @@ footer {
         padding: 0 20px;
         font-size: 60px;
     }
-
+    span.inpt input, input[type="textarea"]{
+        width: 60vw;
+    }
     .content {
         text-align: center;
     }
@@ -530,29 +532,18 @@ footer {
     .why-me h1, .why-me h3 {
         font-size: 30px;
     }
-
-
-
-
    .img-form{
        padding: 0;
        margin:0;
    }
-
-    footer {
-        width: 100%;
-        margin: 0;
-    }
-
-    form {
-        width: 100%;
-    }
-
     nav a {
         font-size: 15px;
     }
-
+    form{
+        font-size: 25px;
+    }
     span.inpt input, input[type="textarea"] {
+        width: 50vw;
         font-size: 12px;
     }
 }
