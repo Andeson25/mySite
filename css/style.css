@@ -11,7 +11,7 @@ nav {
     overflow: hidden;
     height: 60px;
     background-color: #2e2e2e;;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -23,14 +23,22 @@ a {
 }
 
 nav a {
+
     list-style-type: none;
     color: #f8f8f8;
-    padding: 20vw 0;
-    margin: 0;
-
 }
-
-nav a:hover {
+.nav-icon{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icon img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+nav span.nav-icon:hover {
     background: #00939C;
 }
 
@@ -46,6 +54,7 @@ header {
     align-content: center;
     background-image: url('../img/header.png');
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -353,7 +362,7 @@ span.inpt input, input[type="textarea"] {
     -moz-box-sizing: border-box;
     outline: none;
     display: block;
-    width: 40vw;
+    width: 50vw;
     padding: 7px;
     border: none;
     border-bottom: 1px solid #ddd;
@@ -498,5 +507,9 @@ footer{
 @media (max-width: 666px) {
     .why-me h1, .why-me h3 {
         font-size: 30px;
+    }
+
+    span.inpt input, input[type="textarea"]{
+        font-size: 12px;
     }
 }
