@@ -502,6 +502,15 @@ footer{
         grid-column: 1;
         grid-row: 1;
     }
+    .card-first-img{
+        background-position: center top;
+    }
+    .card-second-img{
+        background-position: center top;
+    }
+    .card-third-img{
+        background-position: center top;
+    }
 }
 
 @media (max-width: 666px) {
