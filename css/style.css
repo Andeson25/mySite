@@ -435,7 +435,7 @@ ul.social-icons {
 }
 
 .fa-facebook {
-    padding: 10px 14px;
+    padding: 20px 30px;
     transition: .5s;
 }
 
@@ -444,7 +444,7 @@ ul.social-icons {
 }
 
 .fa-twitter {
-    padding: 10px 12px;
+    padding: 20px 20px;
     transition: .5s;
 }
 
@@ -453,7 +453,7 @@ ul.social-icons {
 }
 
 .fa-youtube {
-    padding: 10px 14px;
+    padding: 20px 25px;
     transition: .5s;
 }
 
@@ -462,7 +462,7 @@ ul.social-icons {
 }
 
 .fa-google-plus {
-    padding: 10px 9px;
+    padding: 20px 20px;
     transition: .5s;
 }
 
@@ -471,7 +471,7 @@ ul.social-icons {
 }
 
 .fa-github {
-    padding: 10px 9px;
+    padding: 20px 25px;
     transition: .5s;
 }
 
