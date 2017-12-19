@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 body {
     max-width: 100vw;
     margin: auto;
@@ -15,7 +14,8 @@ nav {
     max-width: 100vw;
     overflow: hidden;
     height: 60px;
-    background-color: #2e2e2e;;
+    background-color: #2e2e2e;
+    ;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,7 +28,6 @@ a {
 }
 
 nav a {
-
     list-style-type: none;
     color: #f8f8f8;
 }
@@ -89,7 +88,6 @@ header::before {
 }
 
 header .buttons h1 {
-
     font-size: 5rem;
     color: #ffffff;
 }
@@ -109,7 +107,6 @@ header .buttons h1 {
     outline: none;
     position: relative;
     transition: all ease 0.1s;
-
 }
 
 a:hover {
@@ -147,7 +144,6 @@ section.content {
     padding: 10px 10px;
     background-color: #fdfdfd;
     box-shadow: 1px 1px 2px 3px #ccc;
-
 }
 
 .introduction-text {
@@ -236,7 +232,7 @@ section.content {
     grid-row: 4/5;
 }
 
-.reviews > hr {
+.reviews>hr {
     margin: 0 20px;
 }
 
@@ -253,7 +249,7 @@ section.content {
     box-shadow: 1px 1px 2px 3px #ccc;
 }
 
-.card > h3 {
+.card>h3 {
     padding: 0 15px;
 }
 
@@ -322,7 +318,7 @@ form {
     padding: 20px;
 }
 
-form > input[type="submit"] {
+form>input[type="submit"] {
     width: 120px;
 }
 
@@ -337,18 +333,18 @@ form > input[type="submit"] {
     flex-direction: row;
 }
 
-#ajaxform input:placeholder-shown + span:after {
+#ajaxform input:placeholder-shown+span:after {
     content: '';
 }
 
-input:invalid + span:after {
+input:invalid+span:after {
     position: absolute;
     content: '✖';
     padding-left: 5px;
     color: #8b0000;
 }
 
-input:valid + span:after {
+input:valid+span:after {
     position: absolute;
     content: '✓';
     padding-left: 5px;
@@ -416,209 +412,174 @@ footer {
     align-items: center;
     color: #fbfff0;
 }
-footer h2{
-    margin: 0;  
+
+footer h2 {
+    margin: 0;
 }
+
 .footer-social-icons {
     text-align: center;
 }
+
 ul.social-icons {
     padding: 0;
 }
+
 .social-icons li {
     padding: 0 10px;
     display: inline;
 }
 
 .social-icons a {
-    
     color: #fff;
-    text-decoration: none;
 }
+
 .fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
     transition: .5s;
-    background-color: #322f30;
 }
+
 .fa-facebook:hover {
     background-color: #3d5b99;
 }
+
 .fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 12px;
     transition: .5s;
-    background-color: #322f30;
 }
+
 .fa-twitter:hover {
     background-color: #00aced;
 }
 
 .fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
     transition: .5s;
-    background-color: #322f30;
 }
+
 .fa-youtube:hover {
     background-color: #e64a41;
 }
 
 .fa-google-plus {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 9px;
     transition: .5s;
-    background-color: #322f30;
 }
+
 .fa-google-plus:hover {
     background-color: #e25714;
 }
-
+.fa-github{
+    padding: 10px 9px;
+    transition: .5s;
+}
+.fa-github:hover{
+    background-color: #32ad4e;
+}
 @media (max-width: 1084px) {
     h1 {
         padding: 0 20px;
         font-size: 100px;
     }
-
     .buttons a {
-
         font-size: 30px;
     }
 }
 
-@media (max-width: 1028px) {
-
-}
+@media (max-width: 1028px) {}
 
 @media (max-width: 924px) {
     header .buttons h1 {
         padding: 0 20px;
         font-size: 60px;
     }
-
     span.inpt input, input[type="textarea"] {
         width: 60vw;
     }
-
     .content {
         text-align: center;
     }
-
     .introduction {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
-
     .introduction-img {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
     .introduction-text {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-
     .content {
         text-align: center;
     }
-
     .schedule {
         grid-row: 3/4;
         grid-column: 1/5;
     }
-
     .tip {
         grid-row: 4/5;
         grid-column: 1/5;
     }
-
     .online {
         grid-column: 1/5;
         grid-row: 5/6;
     }
-
     .on-home {
         grid-column: 1/5;
         grid-row: 6/7;
     }
-
     .why-me h1, .why-me h3 {
         font-size: 55px;
         padding: 0;
         margin: 0;
     }
-
     .buttons a {
-
         font-size: 25px;
-
     }
-
     .card {
         margin: 0 20px;
     }
-
     .card-first {
         grid-column: 1/4;
         grid-row: 1/2;
     }
-
     .card-second {
         grid-column: 1/4;
         grid-row: 2/3;
     }
-
     .card-third {
         grid-column: 1/4;
         grid-row: 3/4;
     }
-
     .img-form {
         visibility: hidden;
     }
-
     #contacts {
         grid-template-columns: 1fr 0;
-
         min-height: auto;
         margin: auto;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
     form {
         grid-column: 1;
         grid-row: 1;
     }
-    .form-header{
+    .form-header {
         font-size: 40px;
     }
     .img-form {
         padding: 0;
         margin: 0;
     }
-
     .card-first-img {
         background-position: center top;
     }
-
     .card-second-img {
         background-position: center top;
     }
-
     .card-third-img {
         background-position: center top;
     }
@@ -628,20 +589,17 @@ ul.social-icons {
     .why-me h1, .why-me h3 {
         font-size: 30px;
     }
-
     .img-form {
         padding: 0;
         margin: 0;
     }
-
     nav a {
         font-size: 15px;
     }
-
     form {
         font-size: 25px;
     }
-    .form-header{
+    .form-header {
         font-size: 25px;
     }
     span.inpt input, input[type="textarea"] {
