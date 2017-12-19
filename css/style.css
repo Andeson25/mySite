@@ -469,13 +469,16 @@ ul.social-icons {
 .fa-google-plus:hover {
     background-color: #e25714;
 }
-.fa-github{
+
+.fa-github {
     padding: 10px 9px;
     transition: .5s;
 }
-.fa-github:hover{
+
+.fa-github:hover {
     background-color: #32ad4e;
 }
+
 @media (max-width: 1084px) {
     h1 {
         padding: 0 20px;
