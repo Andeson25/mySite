@@ -336,7 +336,13 @@ form>input[type="submit"] {
 #ajaxform input:placeholder-shown+span:after {
     content: '';
 }
-
+dialog {
+        border-radius: 5px;
+        width: 250px;
+        background: #f8f8f8;
+        border: 2px solid #f0650d;
+        text-align: center;
+    }
 input:invalid+span:after {
     position: absolute;
     content: '✖';
@@ -412,9 +418,11 @@ footer {
     align-items: center;
     color: #fbfff0;
 }
-footer h3{
+
+footer h3 {
     margin: 3px 0;
 }
+
 footer h2 {
     margin: 0;
 }
@@ -572,7 +580,7 @@ ul.social-icons {
         grid-column: 1;
         grid-row: 1;
     }
-   
+    
     .form-header {
         font-size: 40px;
     }
@@ -604,6 +612,9 @@ ul.social-icons {
     }
     form {
         font-size: 25px;
+    }
+    dialog{
+        font-size: 10px;
     }
     .form-header {
         font-size: 25px;

@@ -19,15 +19,25 @@ $("#ajaxform").submit(function (e) {
         var data = form.serialize();
         $.ajax({
             type: "POST",
-            url: "https://formspree.io/oleh.petryk@gmail.com",
+            url: "",
             dataType: "json",
             data: data,
             success: function () {
-                alert("Form was delivered!");
+                var dialog = $("#dialogForm");
+                dialog.html("<h1>Form was delivered!</h1>");
+                dialog.show();
+                setTimeout(function () {
+                    dialog.css("display", "none");
+                    dialog.close();
+                }, 2000);
             },
             error: function (xhr, ajaxOptions, thrownError) {
-                alert(xhr.status);
-                alert(thrownError);
+                var dialog = $("#dialogForm");
+                dialog.html(`<h3>An error occured!</h3><br><p>${xhr.status}</p>`);
+                dialog.show();
+                setTimeout(function () {
+                    dialog.css("display", "none");
+                }, 2000);
             }
         });
     }
