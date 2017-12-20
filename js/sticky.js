@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";
+
 
     var $navbar = $("#navbar"),
         y_pos = $navbar.offset().top,

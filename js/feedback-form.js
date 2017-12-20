@@ -28,7 +28,6 @@ $("#ajaxform").submit(function (e) {
                 dialog.show();
                 setTimeout(function () {
                     dialog.css("display", "none");
-                    dialog.close();
                 }, 2000);
             },
             error: function (xhr, ajaxOptions, thrownError) {
