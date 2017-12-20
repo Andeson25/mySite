@@ -294,7 +294,6 @@ section.content {
     justify-content: center;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    grid-auto-rows: 500px;
     box-shadow: 1px 3px 2px #ccc;
 }
 
@@ -577,9 +576,6 @@ ul.social-icons {
         grid-column: 1/4;
         grid-row: 3/4;
     }
-    .img-form {
-        visibility: hidden;
-    }
     #contacts {
         grid-template-columns: 1fr 0;
         min-height: auto;
@@ -612,10 +608,6 @@ ul.social-icons {
 @media (max-width: 666px) {
     .why-me h1, .why-me h3 {
         font-size: 30px;
-    }
-    .img-form {
-        padding: 0;
-        margin: 0;
     }
     nav a {
         font-size: 15px;
