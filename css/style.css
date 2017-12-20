@@ -336,13 +336,15 @@ form>input[type="submit"] {
 #ajaxform input:placeholder-shown+span:after {
     content: '';
 }
+
 dialog {
-        border-radius: 5px;
-        width: 250px;
-        background: #f8f8f8;
-        border: 2px solid #f0650d;
-        text-align: center;
-    }
+    border-radius: 5px;
+    width: 250px;
+    background: #f8f8f8;
+    border: 2px solid #f0650d;
+    text-align: center;
+}
+
 input:invalid+span:after {
     position: absolute;
     content: '✖';
@@ -489,6 +491,15 @@ ul.social-icons {
     background-color: #32ad4e;
 }
 
+.fa-linkedin {
+    padding: 20px 25px;
+    transition: .5s;
+}
+
+.fa-linkedin:hover {
+    background-color: #1178b3;
+}
+
 @media (max-width: 1084px) {
     h1 {
         padding: 0 20px;
@@ -580,7 +591,6 @@ ul.social-icons {
         grid-column: 1;
         grid-row: 1;
     }
-    
     .form-header {
         font-size: 40px;
     }
@@ -613,7 +623,7 @@ ul.social-icons {
     form {
         font-size: 25px;
     }
-    dialog{
+    dialog {
         font-size: 10px;
     }
     .form-header {
