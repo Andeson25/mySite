@@ -1,33 +1,26 @@
-(function ($) {
+var $navbar = $("#navbar"),
+    y_pos = $navbar.offset().top,
+    height = $navbar.height();
+$(document).scroll(function () {
+    var scrollTop = $(this).scrollTop();
 
-
-    var $navbar = $("#navbar"),
-        y_pos = $navbar.offset().top,
-        height = $navbar.height();
-
-    $(document).scroll(function () {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $navbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $navbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
-    });
-
-})(jQuery, undefined);
-$(document).ready(function () {
-    $("body").on("click", "a", function (event) {
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 500);
-    });
-
+    if (scrollTop > y_pos + height) {
+        $navbar.addClass("navbar-fixed").animate({
+            top: 0
+        });
+    } else if (scrollTop <= y_pos) {
+        $navbar.removeClass("navbar-fixed").clearQueue().animate({
+            top: "-48px"
+        }, 0);
+    }
 });
+$("body").on("click", "a", function (event) {
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 500);
+});
+
+
 
 
 
