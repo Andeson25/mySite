@@ -412,7 +412,9 @@ footer {
     align-items: center;
     color: #fbfff0;
 }
-
+footer h3{
+    margin: 3px 0;
+}
 footer h2 {
     margin: 0;
 }
@@ -570,6 +572,7 @@ ul.social-icons {
         grid-column: 1;
         grid-row: 1;
     }
+   
     .form-header {
         font-size: 40px;
     }
