@@ -19,7 +19,7 @@ $("#ajaxform").submit(function (e) {
         var data = form.serialize();
         $.ajax({
             type: "POST",
-            url: "",
+            url: "https://formspree.io/oleh.petryk@gmail.com",
             dataType: "json",
             data: data,
             success: function () {
