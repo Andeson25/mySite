@@ -24,7 +24,7 @@ $("#ajaxform").submit(function (e) {
             data: data,
             success: function () {
                 var dialog = $("#dialogForm");
-                dialog.html("<h1>Form was delivered!</h1>");
+                dialog.html("<h3>Form was delivered!</h3>");
                 dialog.show();
                 setTimeout(function () {
                     dialog.css("display", "none");

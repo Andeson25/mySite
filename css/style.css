@@ -335,7 +335,9 @@ form>input[type="submit"] {
 #ajaxform input:placeholder-shown+span:after {
     content: '';
 }
-
+dialog  h3{
+  margin-top:auto;
+}
 dialog {
     border-radius: 5px;
     width: 250px;
@@ -612,17 +614,30 @@ ul.social-icons {
     nav a {
         font-size: 15px;
     }
+    #contacts{
+      margin: 0;
+      width: 100vw;
+    }
     form {
         font-size: 25px;
+
     }
     dialog {
-        font-size: 10px;
+
+        font-size: 30px;
+        height: 100px;
+    }
+    span::after{
+      font-size: 20px;
     }
     .form-header {
         font-size: 25px;
     }
+    form label{
+      font-size: 12px;
+    }
     span.inpt input, input[type="textarea"] {
         width: 70vw;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
