@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 body {
-    max-width: 2000px;
+    max-width: 1500px;
     margin: auto;
     font-family: Merriweather;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    max-width: 2000px;
+    max-width: 1500px;
     overflow: hidden;
     height: 60px;
     background-color: #2e2e2e;
@@ -49,13 +49,13 @@ nav span.nav-icon:hover {
 }
 
 .navbar-fixed {
-    max-width: 2000px;
+    max-width: 1500px;
     top: 0;
     position: fixed;
 }
 
 header {
-    max-width: 2000px;
+    max-width: 1500px;
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -71,7 +71,7 @@ header {
 }
 
 header::before {
-    max-width: 2000px;
+    max-width: 1500px;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -120,7 +120,7 @@ a:active {
 }
 
 .container {
-    max-width: 2000px;
+    max-width: 1500px;
     width: 100vw;
     background-color: #ffffff;
     display: grid;
@@ -284,15 +284,14 @@ section.content {
 }
 
 #contacts {
-    width: 80vw;
-    max-width: 2000px;
-    margin: 30px auto;
+    max-width: 1500px;
+    margin: 30px 50px;
     border-radius: 10px;
     padding: 5px 0;
     background-color: #f8f8f8;
     justify-content: center;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     box-shadow: 1px 3px 2px #ccc;
 }
 
@@ -304,18 +303,21 @@ section.content {
 }
 
 .img-form img {
-    height: auto;
+
     max-height: 450px;
-    max-width: 2000px;
+
 }
 
 form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
-
+input{
+    max-width: 500px;
+}
 form>input[type="submit"] {
     width: 120px;
 }
@@ -412,7 +414,7 @@ input[type="submit"]:active {
 }
 
 footer {
-    max-width: 2000px;
+    max-width: 1500px;
     width: 100vw;
     height: auto;
     background-color: #2e2e2e;
@@ -583,12 +585,10 @@ ul.social-icons {
     #contacts {
         padding-top: 50px;
         grid-template-columns: 1fr 0 ;
-
-
-        margin-top: 15px;
-        margin-bottom: 15px;
+        width: 80vw;
+        margin: 0 0;
     }
-    form {
+    form {  
         grid-column: 1;
         grid-row: 1;
     }
@@ -596,6 +596,7 @@ ul.social-icons {
         font-size: 40px;
     }
     .img-form {
+        width: auto;
         visibility: hidden;
         padding: 0;
         margin: 0;
