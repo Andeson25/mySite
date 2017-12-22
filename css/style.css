@@ -163,8 +163,8 @@ section.content {
 .why-me {
     grid-column: 2/4;
     text-align: center;
-    margin: 20px 0;
     padding: 0;
+    padding-top: 70px;
     font-size: 50px;
 }
 
@@ -335,9 +335,11 @@ form>input[type="submit"] {
 #ajaxform input:placeholder-shown+span:after {
     content: '';
 }
-dialog  h3{
-  margin-top:auto;
+
+dialog h3 {
+    margin-top: auto;
 }
+
 dialog {
     border-radius: 5px;
     width: 250px;
@@ -514,6 +516,7 @@ ul.social-icons {
 @media (max-width: 1028px) {}
 
 @media (max-width: 924px) {
+ 
     header .buttons h1 {
         padding: 0 20px;
         font-size: 60px;
@@ -579,6 +582,7 @@ ul.social-icons {
         grid-row: 3/4;
     }
     #contacts {
+        padding-top: 50px;
         grid-template-columns: 1fr 0;
         min-height: auto;
         margin: auto;
@@ -614,28 +618,26 @@ ul.social-icons {
     nav a {
         font-size: 15px;
     }
-    #contacts{
-      margin: 0;
-      width: 100vw;
+    #contacts {
+        margin: 0;
+        width: 100vw;
     }
     form {
         font-size: 25px;
-
     }
     dialog {
         width: fit-content;
-
         font-size: 30px;
         height: 100px;
     }
-    span::after{
-      font-size: 20px;
+    span::after {
+        font-size: 20px;
     }
     .form-header {
         font-size: 20px;
     }
-    form label{
-      font-size: 12px;
+    form label {
+        font-size: 12px;
     }
     span.inpt input, input[type="textarea"] {
         width: 70vw;
